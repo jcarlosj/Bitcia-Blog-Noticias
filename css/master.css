@@ -10,6 +10,9 @@
     flex-direction: column;
     background-color: pink;
 }
+.menu .social li a span {
+    display: none;
+ }
 @media ( min-width:768px ) { 
     .menu .social {
         background-color: yellow;
@@ -25,3 +28,20 @@
         background-color: red;
     }
 }
+/* Iconos Redes Sociales */
+.menu .social li a::before {
+    font-family: 'Font Awesome 5 Brands';
+ }
+.menu .social li a[href*='facebook.com']::before {
+    content: '\f39e';
+}
+.menu .social li a[href*='twitter.com']::before {
+    content: '\f099';
+}
+.menu .social li a[href*='youtube.com']::before {
+    content: '\f167';
+}
+.menu .social li a[href*='instagram.com']::before {
+    content: '\f16d';
+}
+
