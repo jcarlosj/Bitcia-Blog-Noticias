@@ -18,12 +18,12 @@
 .menu .social li a span {
     display: none;
  }
-@media ( min-width:768px ) { 
+@media ( min-width: 768px ) { 
     .menu .social {
         background-color: yellow;
     }
 }
-@media ( min-width:992px ) { 
+@media ( min-width: 992px ) { 
     .menu .social {
         background-color: orange;
     }
@@ -71,7 +71,7 @@ nav ul a {
     text-decoration: none;
 }
 
-/* Menú Simple */
+/* Menu Simple */
 nav.simple ul {
     display: flex;
     flex-direction: column;    /* Mobile First */
@@ -88,4 +88,10 @@ nav.simple ul {
     nav.simple ul li {
        margin-bottom: 0;
     }
- }
+}
+
+/* Container */
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
