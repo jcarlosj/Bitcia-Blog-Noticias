@@ -2,4 +2,26 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
- }
+}
+
+/* Menu Social */
+.menu .social {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+}
+@media ( min-width:768px ) { 
+    .menu .social {
+        background-color: yellow;
+    }
+}
+@media ( min-width:992px ) { 
+    .menu .social {
+        background-color: orange;
+    }
+}
+@media ( min-width: 1200px ) { 
+    .menu .social {
+        background-color: red;
+    }
+}
