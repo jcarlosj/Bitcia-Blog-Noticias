@@ -7,8 +7,13 @@
 /* Menu Social */
 .menu .social {
     display: flex;
-    flex-direction: column;
-    background-color: pink;
+    flex-direction: row;
+}
+.menu .social li {
+    list-style: none;
+}
+.menu .social li a {
+    text-decoration: none;
 }
 .menu .social li a span {
     display: none;
@@ -45,3 +50,42 @@
     content: '\f16d';
 }
 
+
+nav {
+    background-color: black;
+}
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    padding: 20px;
+}
+nav ul li:hover {
+    background-color: #1a2770;
+}
+nav ul a {
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+/* Menú Simple */
+nav.simple ul {
+    display: flex;
+    flex-direction: column;    /* Mobile First */
+    justify-content: space-between;
+ }
+ nav.simple ul li {
+    margin-bottom: .5rem;
+    text-align: center;
+ }
+ @media screen and ( min-width: 768px ) {
+    nav.simple ul {
+       flex-direction: row;
+    }
+    nav.simple ul li {
+       margin-bottom: 0;
+    }
+ }
